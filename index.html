@@ -12,7 +12,7 @@
         crossorigin="anonymous">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-</head>
+    
 
 <body>
     <div class="container">
@@ -28,7 +28,6 @@
                                     <th scope="col">Train Name</th>
                                     <th scope="col">Destination</th>
                                     <th scope="col">Frequency(min)</th>
-                                    <th scope="col">Months Worked</th>
                                     <th scope="col">Next Arrival</th>
                                     <th scope="col">Minutes Away</th>
                                 </tr>
@@ -44,6 +43,7 @@
         </div>
         <br>
         <div class="row">
+            
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -56,17 +56,17 @@
 
                         </div>
                         <div class="form-group">
-                            <label for="role">Destination</label>
+                            <label for="destination">Destination</label>
                             <input type="text" class="form-control" id="role" placeholder="Destination">
                         </div>
                         <div class="form-group">
                             <label for="startDate">First Train Time(HH:mm-military time)</label>
-                            <input type="military-time" class="form-control" id="startDate" placeholder="HH:mm">
+                            <input type="text" class="form-control" id="startDate" placeholder="HH:mm">
 
                         </div>
                         <div class="form-group">
                             <label for="rate">Frequency(min)</label>
-                            <input type="text" class="form-control" id="rate" placeholder="30">
+                            <input type="number" class="form-control" id="tfrequency" placeholder="30">
                         </div>
 
                         <button type="submit" id="submit" class="btn btn-primary">Submit</button>
